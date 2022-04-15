@@ -1,0 +1,39 @@
+{%extends "base.html"%}
+{% block title %}home{% endblock %}
+{% block content %}
+<div class="auth_body">
+<div class="form_container">
+    			<form class="form" id="createAccount">
+				<h1 class="form_title">create Account</h1>
+				<div class="form_message message_error"></div>
+				<div class="input_group">
+					<input type="text" id="user" class="form_input" autofocus placeholder="username  ">
+					<div class="form__error-message"> </div>
+				</div>
+				<div class="input_group">
+					<input type="text" class="form_input" autofocus placeholder="Email  ">
+					<div class="form__error-message"> </div>
+				</div>
+				<div class="input_group">
+					<input type="password" class="form_input" autofocus placeholder="password">
+					<div class="form__error-message">  </div>
+				</div>
+				<div class="input_group">
+					<input type="password" class="form_input" autofocus placeholder="confirm password">
+					<div class="form__error-message">  </div>
+				<button class="form_button" type="submit">continue</button>
+
+				<p class="form_text">
+					<a id="linkLogin"  href="/login" class="form_link">already havean account? sign in</a>
+				</p>
+				</div>
+			</form>
+
+</div>
+
+
+</div>
+
+
+
+{% endblock %}
