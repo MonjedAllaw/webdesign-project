@@ -1,0 +1,38 @@
+{%extends "base.html"%}
+{% block title %}Rook Paper scissors{% endblock %}
+{% block content %}
+
+<div>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="score_board">
+        <div class="badge" id="user-badge">user</div>
+        <div class="badge" id="computer-badge">comp</div>
+        <span id="user_score">0</span>:<span id="computer_score">0</span>
+    </div>
+
+    <div class="result">
+        <p>lest play</p>
+    </div>
+
+    <div class="rps_choices">
+        <div class="rps_choice" id="r">
+
+        </div>
+        <div class="rps_choice" id="p">
+
+        </div>
+        <div class="rps_choice" id="s">
+
+        </div>
+
+    </div>
+
+    <p id="action_message">make a move</p>
+
+</div>
+
+
+
+{% endblock %}

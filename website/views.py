@@ -16,6 +16,10 @@ def oneplayer():
 def twoplayers():
     return render_template("twoplayers.html")
 
-@views.route('/about')  # decorator
+@views.route('/about')
 def about():
     return render_template("about.html")
+
+@views.route('/rps')
+def rps():
+    return render_template("RPS.html")
