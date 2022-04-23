@@ -3,13 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="static/css/style.css">
+        <link   rel="stylesheet" href="static/css/style.css" >
+        {% block css_link %}{% endblock %}
         <title>{% block title %}base{% endblock %}</title>
 
     </head>
     <body>
     <nav class="navbar">
-        <div class="page-title"> Page title </div>
+        <div class="page-title"> WebGames </div>
         <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -30,7 +31,8 @@
     </nav>
 
     <div>{% block content %}base{% endblock %}</div>
-    <script type="text/javascript" src="../static/js/app.js"></script>
+    {%block js_link%}<script type="text/javascript" src="../static/js/app.js"></script>{%endblock%}
+
 
     </body>
 </html>

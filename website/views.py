@@ -23,3 +23,7 @@ def about():
 @views.route('/rps')
 def rps():
     return render_template("RPS.html")
+
+@views.route('/matching')
+def matching():
+    return render_template("matching.html")

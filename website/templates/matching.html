@@ -1,0 +1,25 @@
+{%extends "base.html"%}
+{% block title%}Matching Game{%endblock%}
+{% block css_link%}<link rel="stylesheet" href="static/css/matching.css"> {%endblock%}
+
+{%block content %}
+
+<header class="game_header">
+        <h1>Find The matching image</h1>
+</header>
+<div class="matching_body">
+         <div class="flips">flips: <span id="flip_nb">0</span></div>
+         <div  class="matched">matched : <span id="match_nb">0</span> /12</div>
+
+         <div id="grid" ></div>
+
+
+</div>
+
+
+
+
+
+
+{% endblock %}
+{%block js_link %} <script type="text/javascript" src="../static/js/matching.js"></script> {%endblock%}
