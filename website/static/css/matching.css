@@ -1,13 +1,16 @@
 .matching_body{
+
+    overflow: auto;
     background:#4383bf;
     height:100vh;
     margin:20px;
     padding:0.5rem;
     border-radius: 7%;
-    ;
+
 
 }
-.matched,
+.action_message,
+.found,
 .flips {
 	font-size: 30px;
 	color: white;
@@ -18,12 +21,48 @@
 }
 
 #grid{
+    overflow: auto;
 
-    width: 60%;
+    width: 40%;
     margin: auto;
-    padding: 2rem;
+    padding:5px;
+
     display:flex;
+    flex-wrap:wrap;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background: white;
+    justify-content: center;
+
    }
+
+@media (max-width:900px){
+
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+     #grid{
+    width:90%;
+    }
+
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 895px) {
+     #grid{
+    width:80%;
+    }
+}
+ #grid >img {
+   flex-basis:21%;
+   margin:1%;
+   height: 60px;
+   width:60px;
+
+
+
+}
+
+
+

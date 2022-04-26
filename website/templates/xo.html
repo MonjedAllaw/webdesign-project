@@ -1,0 +1,34 @@
+{%extends "base.html"%}
+{% block title%}Tic-Tac-Toe{%endblock%}
+{% block css_link%}<link rel="stylesheet" href="static/css/xo.css"> {%endblock%}
+
+{%block content %}
+
+<header class="game_header">
+        <h1>Tic-Tac-Toe</h1>
+</header>
+<div class="xo_body">
+
+
+         <div id="xo_grid" >
+             <div data-index="0" class="xo_square r_border b_border" ></div>
+             <div data-index="1" class="xo_square r_border b_border"></div>
+             <div data-index="2" class="xo_square b_border"></div>
+             <div data-index="3" class="xo_square r_border b_border"></div>
+             <div data-index="4" class="xo_square r_border b_border" ></div>
+             <div data-index="5" class="xo_square b_border"></div>
+             <div data-index="6" class="xo_square r_border "></div>
+             <div data-index="7" class="xo_square r_border "></div>
+             <div data-index="8" class="xo_square "></div>
+         </div>
+
+
+</div>
+
+
+
+
+
+
+{% endblock %}
+{%block js_link %} <script type="text/javascript" src="../static/js/xo.js"></script> {%endblock%}

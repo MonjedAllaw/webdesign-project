@@ -27,3 +27,7 @@ def rps():
 @views.route('/matching')
 def matching():
     return render_template("matching.html")
+
+@views.route('/xo')
+def xo():
+    return render_template("xo.html");
