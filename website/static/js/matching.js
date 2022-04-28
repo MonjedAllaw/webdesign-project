@@ -1,8 +1,14 @@
 const toggleButton= document.getElementsByClassName('toggle-button')[0];
 const navLinks= document.getElementsByClassName('nav-links')[0];
 
+const games_button=document.querySelector(".games_button");
+const games_links=document.querySelector(".games_links");
+
+games_button.addEventListener('click',()=>{
+    games_links.classList.toggle('active');
+}
+)
 toggleButton.addEventListener('click',()=>{
-    console.log("hi");
     navLinks.classList.toggle('active');
 }
 )
@@ -75,7 +81,7 @@ cardArray.sort(()=>0.5-Math.random())
 function display_board(){
     for(let i=0; i<cardArray.length;i++){
         const card = document.createElement('img');
-        card.setAttribute('src','static/imgs/questionMark2.png');
+        card.setAttribute('src','static/imgs/questionMark1.png');
         card.setAttribute('data-id',i);
         card.addEventListener('click',flipCard);
 
@@ -87,6 +93,7 @@ function display_board(){
 display_board();
 
 function flipCard() {
+    action_message.innerHTML ="click two cards to match";
     flips++;
     flips_span.innerHTML=flips;
     let card_id = this.getAttribute('data-id');
@@ -112,7 +119,7 @@ function check_match(){
         action_message.innerHTML ="you clicked the same card";
         flips=flips-1;
          flips_span.innerHTML=flips;
-        all_cards[idOne].setAttribute('src','static/imgs/questionMark2.png');
+        all_cards[idOne].setAttribute('src','static/imgs/questionMark1.png');
 
 
     }else if(card_chosen[0] == card_chosen[1]){
@@ -124,8 +131,8 @@ function check_match(){
 
 
     }else{
-         all_cards[idOne].setAttribute('src','static/imgs/questionMark2.png');
-        all_cards[idTwo].setAttribute('src','static/imgs/questionMark2.png');
+         all_cards[idOne].setAttribute('src','static/imgs/questionMark1.png');
+        all_cards[idTwo].setAttribute('src','static/imgs/questionMark1.png');
 
 
     }

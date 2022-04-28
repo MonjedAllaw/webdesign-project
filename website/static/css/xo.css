@@ -11,6 +11,7 @@
     align-items:center;
 
 
+
 }
 #xo_grid{
     overflow: auto;
@@ -18,8 +19,9 @@
     grid-template-columns:100px 100px 100px;
     grid-template-rows:100px 100px 100px;
     cursor:pointer;
-    margin: auto;
+    margin: 30px;
     padding:5px;
+
 
     border-radius: 4px;
 
@@ -43,4 +45,61 @@
 }
 .b_border{
     border-bottom: 0.2em solid white;
+}
+
+
+.score_board {
+       padding:10px;
+       margin:20px  auto;/*auto to horizontally center the elements;*/
+       border:2px solid white;
+       border-radius:5px;
+       text-align:center;
+       width:300px;
+       color:white;
+       position:relative;
+       font-size:45px;
+
+
+}
+
+.badge{
+    background-color:#f2624f;
+    padding:6px 10px; /*2t,b 10r-l*/
+    font-size:15px;
+
+}
+
+
+#x_badge {
+    position:absolute;
+    top:22px;
+    left:-30px;
+}
+
+#o_badge{
+    position:absolute;
+    top:22px;
+    right:-30px;
+
+}
+.result {
+	font-size: 30px;
+	color: white;
+	text-align:center;
+	font-weight:bold;
+
+
+}
+
+#play_button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: 1px solid white ;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background: #6396b5;
 }

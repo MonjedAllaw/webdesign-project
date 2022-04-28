@@ -8,7 +8,14 @@
         <h1>Tic-Tac-Toe</h1>
 </header>
 <div class="xo_body">
-
+        <div class="score_board">
+        <div class="badge" id="x_badge">X wins</div>
+        <div class="badge" id="o_badge">O wins</div>
+        <span id="x_score">0</span>:<span id="o_score">0</span>
+         </div>
+        <div class="result">
+            <p>Lets play</p>
+        </div>
 
          <div id="xo_grid" >
              <div data-index="0" class="xo_square r_border b_border" ></div>
@@ -21,6 +28,12 @@
              <div data-index="7" class="xo_square r_border "></div>
              <div data-index="8" class="xo_square "></div>
          </div>
+
+        <div class="win_message">
+            <div class="win_message_text"></div>
+            <button id="play_button">Play again</button>
+
+        </div>
 
 
 </div>
