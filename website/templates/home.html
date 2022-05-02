@@ -1,17 +1,38 @@
 {%extends "base.html"%}
 {% block title %}home{% endblock %}
 {% block content %}
+<header class="header">
+    <div class="welcome">
+        <div id="welcome-message"><h1>Welcome To Web Games </h1>
+            <p>
+                Here you can have fun playing simple games alone or with a friend
+            </p>
+
+
+        </div>
+        <img width="400" height="auto" alt="" src="static/imgs/gaming.png">
+    </div>
+
+</header>
 <div class="choices">
-   <div class="page_choice"><a href="\oneplayer">1player</a></div>
-    <div class="page_choice"><a href="\twoplayers">2players</a></div>
-
-</div>
-
+   <div class="page_choice">
+        <img width="auto" height="90" alt="" src="static/imgs/happy.png">
+       <a href="\oneplayer">single player</a></div>
+    <div class="page_choice">
+        <img width="auto" height="90" alt="" src="static/imgs/group.png">
+        <a href="\twoplayers">multiplayer</a></div>
+    <div class="page_choice">
+        <img width="auto" height="90" alt="" src="static/imgs/soon.png">
+        <a href="\soon">coming soon</a></div>
 <div class="auth_buttons">
     <p>you have to login in order to play</p>
     <div class="button"></div>
     <div class="button"></div>
 </div>
+
+</div>
+
+
 
 
 

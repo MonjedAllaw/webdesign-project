@@ -7,7 +7,8 @@
     align-items:center; /*v*/
     justify-content:center; /*h*/
     font-size: 18px;
-    background: #f9f8fb;
+    background:  var(--bg-color);
+
 
 }
 
@@ -19,6 +20,7 @@
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background: white;
+
    }
 .form_container,
 .form_input,
@@ -54,6 +56,7 @@
     outline: none;
     background:#eeeeee;
 
+
 }
 .form_button {
     width: 100%;
@@ -65,10 +68,10 @@
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-    background: #6396b5;
+    background: var(--main-color);
 }
 .form_button:hover{
-    background:#466d85;
+    background:var(--hover-color);
 
 }
 .form_link {

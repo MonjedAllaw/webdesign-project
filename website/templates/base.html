@@ -9,7 +9,8 @@
 
     </head>
     <body>
-    <nav class="navbar">
+    <div class="nav-container">
+        <nav class="navbar">
         <div class="page-title"> WebGames </div>
         <a href="#" class="toggle-button">
             <span class="bar"></span>
@@ -34,12 +35,15 @@
                 <li><a href="/login">LOGIN</a></li>
                 <li><a href="#">LOGOUT</a></li>
                 <li><a href="/about">ABOUT</a></li>
-                <li><a href="/about">CONTACT</a></li>
 
             </ul>
         </div>
 
     </nav>
+
+
+    </div>
+
 
     <div>{% block content %}base{% endblock %}</div>
     {%block js_link%}<script type="text/javascript" src="../static/js/app.js"></script>{%endblock%}
