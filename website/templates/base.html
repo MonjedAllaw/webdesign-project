@@ -5,13 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link   rel="stylesheet" href="static/css/style.css" >
         {% block css_link %}{% endblock %}
+
         <title>{% block title %}base{% endblock %}</title>
 
     </head>
     <body>
     <div class="nav-container">
         <nav class="navbar">
-        <div class="page-title"> WebGames </div>
+       <div class="page-title " id="logo" > <p>Web </p><img width=65"  src="static/imgs/weblogo.png" ><p>ames </p> </div>
+            <div class="page-title " id="nologo" > WebGames </div>
+
         <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -21,8 +24,8 @@
             <ul >
                 <li><a href="/">HOME</a></li>
                 <li><a class="games_button">GAMES</a>
-                     <div class="games_links">
-                        <ul >
+                     <div  class="games_links">
+                        <ul style="margin-top:12px;">
 
                              <li><a href="/rps">RPS</a></li>
                             <li><a href="/matching">MATCH</a></li>

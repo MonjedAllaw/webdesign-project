@@ -43,7 +43,6 @@ function to_words (char){
 function win (user_choice, computer_choice){
     user_score ++;
     user_score_span.innerHTML= user_score;
-
     result_p.innerHTML =`${to_words(user_choice)} beats ${to_words(computer_choice) }. You Win!!`;
 
 }

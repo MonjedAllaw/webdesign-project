@@ -1,6 +1,6 @@
 /*Rock Paper Scissors*/
 .rps_body{
-    background:#4383bf;
+    background:var(--main-color);
     height:100vh;
     margin:20px;
     padding:0.5rem;
@@ -26,7 +26,7 @@
 }
 
 .badge{
-    background-color:#f2624f;
+    background-color:var(--secondary-color);
     padding:6px 10px; /*2t,b 10r-l*/
     font-size:15px;
 
@@ -72,7 +72,7 @@
 	background: white;
 	border: 4px solid white;
 	border-radius:50%;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 }
 .rps_choice:hover{
 	cursor: pointer;

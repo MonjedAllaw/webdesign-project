@@ -2,10 +2,94 @@
 {% block title %}about{% endblock %}
 {% block content %}
 
-<div>
+   {% block css_link %}
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link   rel="stylesheet" href="static/css/style.css" >
+  <style>
+
+
+
+
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+
+{% endblock %}
+
+<div class="about">
+    <div>
+        <h3 style="color:var(--darker-color);">ABOUT US:</h3>
+
+        <p >This website is my final project for the Webdesign course [instructor: Dr MARIE SAADEH] at the Antonine University . Where we explore the elements of front-end development (HTML, CSS, JavaScript and other useful tools like Adobe photoshop, illustrator, Bootstrap...).<br>
+I chose this topic because creating these little webGames will give me the opportunity to dive more into advanced Javascript and Css while also having fun.<br>
+The reason why Python (Flask) is used, is my intention to keep expanding this project beyond this course, and adding a database to save users data and have functional sign-up sign-in forms.</p>
+    </div>
+
+
+        <img width="400" height="auto" alt="" src="static/imgs/gaming3.png">
+
 
 </div>
 
 
+
+<div class="bootstrap-container">
+
+<div class="bootstrap">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/imgs/img3.png"  width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="static/imgs/img2.png" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="static/imgs/img.png"  width="1100" height="500">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+</div>
+
+ <div class="resources">
+     <h4>Resources:</h4>
+     <ul>
+         <li><a>ICONS8</a></li>
+         <li><a>UNDRAW</a></li>
+         <li><a>W3schools</a></li>
+
+
+     </ul>
+
+
+
+  </div>
+</div>
 
 {% endblock %}
