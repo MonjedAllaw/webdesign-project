@@ -1,5 +1,5 @@
 # webdesign-project
-2022 webdesign project
+2022 webdesign project(responsive)
 ![Screenshot 2023-02-04 085351](https://user-images.githubusercontent.com/102415827/216754110-244bdef7-28dc-499b-8ce4-5b8e91c33789.png)
 ![Screenshot 2023-02-04 085446](https://user-images.githubusercontent.com/102415827/216754113-441170c7-97a3-4fcc-82ba-00a621983336.png)
 ![Screenshot 2023-02-04 085527](https://user-images.githubusercontent.com/102415827/216754121-77fe9654-1f90-4185-9383-e892f47defd4.png)
